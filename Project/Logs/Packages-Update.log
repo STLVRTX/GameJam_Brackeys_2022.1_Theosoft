@@ -1,5 +1,5 @@
 
-=== Sun Feb 20 20:59:01 2022
+=== Mon Feb 21 18:59:40 2022
 
 Packages were changed.
 Update Mode: mergeDefaultDependencies
@@ -45,4 +45,6 @@ The following packages were added:
   com.unity.timeline@1.4.8
   com.unity.ugui@1.0.0
 The following packages were updated:
-  com.unity.render-pipelines.universal from version 10.8.0 to 10.8.1
+  com.unity.2d.animation from version 5.0.10 to 5.1.0
+  com.unity.2d.psdimporter from version 4.1.3 to 4.2.0
+  com.unity.2d.spriteshape from version 5.1.7 to 5.2.0
