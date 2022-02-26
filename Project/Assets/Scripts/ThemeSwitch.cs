@@ -6,7 +6,7 @@ public class ThemeSwitch : MonoBehaviour
 {
     [SerializeField]
     private GameObject realityBackground, realityGround, realityPlatform,
-        parallelBackground, parallelGround, parallelPlatform;
+        parallelBackground, parallelGround, parallelPlatform, audio1, audio2;
 
     [SerializeField]
     private KeyCode themeSwitchKey;
@@ -32,7 +32,8 @@ public class ThemeSwitch : MonoBehaviour
         realityBackground.SetActive(true);
         realityGround.SetActive(true);
         realityPlatform.SetActive(true);
-
+        audio1.GetComponent<AudioSource>().volume = 0.2f;
+        audio2.GetComponent<AudioSource>().volume = 0f;
         parallelBackground.SetActive(false);
         parallelGround.SetActive(false);
         parallelPlatform.SetActive(false);
@@ -45,7 +46,8 @@ public class ThemeSwitch : MonoBehaviour
         realityBackground.SetActive(false);
         realityGround.SetActive(false);
         realityPlatform.SetActive(false);
-
+        audio1.GetComponent<AudioSource>().volume = 0f;
+        audio2.GetComponent<AudioSource>().volume = 0.2f;
         parallelBackground.SetActive(true);
         parallelGround.SetActive(true);
         parallelPlatform.SetActive(true);
